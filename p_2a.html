@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Student Feedback Form</title>
+<style >
+
+	#subm{
+/*		display: inline-block;*/
+		text-align: center;
+	}
+
+	h1:hover{
+		color: red;
+	}
+	button:hover{
+	color: green;
+	}
+</style>
+</head>
+<body>
+<h1 style="text-align:center;">Student FeedBack Form</h1>
+<form action="/" method="post">
+<section>
+	<fieldset style="border-radius: 5px; padding:10px;background-color: lightgoldenrodyellow;">
+	<legend>Enter the Student Details : </legend>
+<ul>
+<li> 
+	<label for="name">Name : </label>
+	<input type="text" id="name" required/>
+</li>
+<br>
+<li> 
+	<label for="sec">Section : </label>
+	<select id="sec" style="width:80px">
+		<option>A</option>
+		<option>B</option>
+		<option>C</option>
+	</select>
+</li>
+<br>
+<li> 
+	<label for="usn">Enter your USN : </label>
+	<input type="text" id="usn" required/>
+</li>
+</ul>
+</fieldset>
+</section>
+<section>
+	
+
+</section>
+<br>
+<br>
+<section>
+
+<fieldset style="border-radius:10px;background-color:lightblue;">
+<legend>FeedBack Questions: </legend>
+<ol>
+
+<li>
+	<p>Was the Teacher punctual to the class: </p>
+	<input type="checkbox" id="op1">
+	<label for="op1">Yes</label><br>
+	<input type="checkbox" id="op2">
+	<label for="op2">No</label>
+
+</li>
+<br>
+<br>
+<li>
+	<p>Was the Teacher available to clear all the doubts: </p>
+	<input type="radio" id="op1">
+	<label for="op1">Yes</label><br>
+	<input type="radio" id="op2">
+	<label for="op2">No</label>
+
+</li>
+<br>
+<br>
+<li>
+	<label for="sugg">Any Suggestions : </label><br>
+	<textarea id="sugg" col="100" row="5"></textarea>
+</li>
+</ol>
+</fieldset>
+</section> 
+<br><br>
+<div id="subm">
+ <button type="submit">Submit</button> <button type="reset" >Clear</button></div>
+</form>
+</body>
+</html>
